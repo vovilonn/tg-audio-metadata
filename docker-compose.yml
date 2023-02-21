@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  tg-audio-metadata:
+    build: .
+    restart: always
+    env_file: .env

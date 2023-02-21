@@ -106,7 +106,6 @@ export const addMetadataWizard = new Scenes.WizardScene(
     },
     stepHandler,
     async (ctx) => {
-        console.log(ctx.session);
         ctx.reply("Обработка...");
         const downloadUrl = await ctx.telegram.getFileLink(ctx.session.fileId);
         const filepath = `${tempFolderPath}/${v4()}.${ctx.session.ext}`;
